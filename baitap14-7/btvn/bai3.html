@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+ Nhập tên : <input type="text" id="ten" onchange="xinchao()">
+<p id="1"></p>
+<body>
+<script>
+  function xinchao(){
+    let name = document.getElementById('ten').value;
+    document.getElementById('1').innerHTML = "Hello" + name;
+  }
+</script>
+
+</body>
+</html>

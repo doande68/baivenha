@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập điểm Vật Lý:
+<input type="text" id="L"><br><br>
+Nhập điểm Hóa Học:
+<input type="text" id="H"><br><br>
+Nhập điểm Toán Học:
+<input type="text" id="T"><br><br>
+<button onclick="giatrivao()">Caculator</button>
+<p id="ketqua"></p>
+<script>
+  function giatrivao() {
+    let L = +document.getElementById("L").value;
+    let H = +document.getElementById("H").value;
+    let T = +document.getElementById("T").value;
+    let Avarage = (L+H+T)/3;
+    document.getElementById("ketqua").innerHTML="Điểm trung bình = " + Avarage + "<br>Tổng điểm = "+ (L+H+T);
+  }
+</script>
+</body>
+</html>

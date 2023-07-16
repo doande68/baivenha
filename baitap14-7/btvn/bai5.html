@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+Chiều dài : <input type="text" id="so1"><br><br>
+Chiều rộng :<input type="text" id="so2"><br><br>
+<button onclick="laydulieu()">Result</button>
+<body>
+<script>
+    function laydulieu() {
+        let CD = +document.getElementById('so1').value
+        let CR = +document.getElementById('so2').value
+        let Chuvi = (CD + CR) * 2
+        alert(Chuvi)
+    }
+
+    function laydulieu() {
+        let CD = +document.getElementById('so1').value
+        let CR = +document.getElementById('so2').value
+        let Dientich = (CD * CR)
+        alert(Dientich)
+    }
+</script>
+</body>
+</html>

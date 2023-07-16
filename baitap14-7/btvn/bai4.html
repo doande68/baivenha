@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+ Nhập số a <input type="text" id="so1" ><br><br>
+ Nhập số b <input type="text" id="so2"><br><br>
+<button onclick="laydulieu()"> kiểm tra </button>
+<p id="result">
+<body>
+<script>
+  function laydulieu() {
+      let a = +document.getElementById('so1').value;
+      let b = +document.getElementById('so2').value;
+      if (a == b) {
+          document.getElementById('result').innerHTML = "Result: a bằng b";
+      }
+      else if (a > b){
+          document.getElementById('result').innerHTML = "Result : a lớn hơn b";
+      }
+      else if ( a != b){
+          document.getElementById('result').innerHTML = "Result : a khác  b";
+      }
+          }
+</script>
+</body>
+</html>
